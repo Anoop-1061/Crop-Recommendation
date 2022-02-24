@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>
+        CROP RECOMMENDER
+    </title>
+</head>
+
+    <body>
+
+        <center>
+
+            <h1> CROP RECOMMENDER </h1> <br>
+
+            <form method = "POST", action = "{{url_for('home')}}">
+                <b> Nitrogen Ratio : <input type = "text", name = 'N', placeholder = "Enter value"> <br><br>
+                    Phosphorous Ratio : <input type = "text", name = 'P', placeholder = "Enter value"> <br><br>
+                Potassium Ratio : <input type = "text", name = 'K', placeholder = "Enter value"> <br><br>
+                Temperature : <input type = "text", name = "Temp", placeholder = "Enter value"> <br><br>
+                Humidity : <input type = "text", name = "Humid", placeholder = "Enter value"> <br><br>
+                pH : <input type = "text", name = "pH", placeholder = "Enter value"> <br><br>
+                Rainfall : <input type = "text", name = "Rain", placeholder = "Enter value"> <br><br><br></b>
+                <input type = "submit", value = "Predict">
+            </form>
+                
+        </center>
+    </body>
+
+<style>
+    body {
+            background-image: url('static/images.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            }
+</style>
+
+</html>
